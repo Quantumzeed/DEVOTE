@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct DevoteApp: App {
+    
+    init(){
+        UITableView.appearance().backgroundColor = UIColor.clear
+    }
+    
     let persistenceController = PersistenceController.shared
     
     @AppStorage("isDarkMode") var isDarkMode: Bool = false
